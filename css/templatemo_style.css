@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 /* 
 
 Flex Template 
@@ -235,7 +236,7 @@ textarea {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.83em;
   line-height: 1.75;
   color: #666666;
@@ -262,7 +263,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #444444;
 }
 
@@ -452,9 +453,9 @@ hr {
   z-index: 9;
   width: 100%;
   text-align: center;
-  top: 28vw;
+  top: 10vw;
   left: 0;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 .flexslider .slider-caption h2 {
   color: white;
@@ -831,7 +832,7 @@ hr {
   margin-bottom: 40px;
 }
 
-.map-canvas {
+#map {
   height: 380px;
   border: 10px solid #efefef;
 }
@@ -871,7 +872,7 @@ hr {
 
 /*
 body, p, div, h1, h2, h3, h4, h5, h6 {
-	font-family: "Open Sans", Arial, Verdana, Geneva, sans-serif;
+	font-family:"Noto Sans KR", sans-serif;
    	font-style: normal;
 }
 */
@@ -884,4 +885,29 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   .team-overlay ul {
     display: list-item;
   }
+}
+
+.kakao_banner {
+  background: #f9e000;
+  color: #000;
+  font-size: 1vw;
+}
+.kakao-item {
+  display: flex;
+  align-items: center;
+  padding: 4em 8em 7em 8em;
+  justify-content: space-between;
+}
+.kakao-item header {
+  font-size: 4.5em;
+  font-weight: 500;
+}
+.kakao-item .fa-comment {
+  font-size: 17em;
+}
+.kakao-item p {
+  margin-top: 0.3em;
+  font-size: 4.5em;
+  font-weight: 300;
+  /* border-bottom: 2px solid black; */
 }
