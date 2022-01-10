@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-/* 
-
-Flex Template 
-
-http://www.templatemo.com/tm-406-flex
-
-*/
 
 html,
 body,
@@ -321,19 +314,28 @@ hr {
 }
 
 .site-header ul.social-icons {
-  position: relative;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
   z-index: 11;
-  margin: 30px 0;
+  margin: 30px 0 20px 0;
+  align-items: center;
 }
 .site-header ul.social-icons li {
-  display: inline-block;
-  margin: 0 2px;
 }
 .site-header ul.social-icons li a {
-  width: 36px;
-  height: 36px;
-  background-color: white;
   color: #444444;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.site-header ul.social-icons li a:hover {
+  color: #118ab2;
+  text-decoration: none;
+}
+.site-header ul.social-icons li i {
   text-align: center;
   line-height: 36px;
   border-radius: 18px;
@@ -341,6 +343,11 @@ hr {
   -moz-border-radius: 18px;
 }
 
+.site-header ul.social-icons a span {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
 .main-header {
   position: fixed;
   width: 100%;
@@ -477,7 +484,8 @@ hr {
 .flexslider .slider-caption a.slider-btn {
   color: white;
   background-color: #118ab2;
-  padding: 1.2em 2em;
+  font-size: 1.5em;
+  padding: 0.6em 1em;
   border-radius: 0.4em;
   text-transform: uppercase;
   font-weight: 700;
@@ -584,6 +592,12 @@ hr {
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 10px;
+  /* letter-spacing: 0.5em; */
+  /* unicode-bidi: bidi-override;
+  direction: rtl; */
+}
+.heading-section p::first-letter {
+  /* letter-spacing: normal; */
 }
 
 .small-text {
@@ -607,7 +621,10 @@ hr {
   text-align: center;
   margin-bottom: 30px;
 }
-
+.service-item h3 {
+  color: white;
+  font-size: 0.65em;
+}
 .service-item a {
   color: #ffff66;
 }
@@ -889,7 +906,7 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
 
 .kakao_banner {
   background: #f9e000;
-  color: #000;
+  color: #2a303e;
   font-size: 1vw;
 }
 .kakao-item {
@@ -906,7 +923,6 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   font-size: 17em;
 }
 .kakao-item p {
-  margin-top: 0.3em;
   font-size: 4.5em;
   font-weight: 300;
   /* border-bottom: 2px solid black; */
