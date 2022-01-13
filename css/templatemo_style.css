@@ -321,8 +321,6 @@ hr {
   margin: 30px 0 20px 0;
   align-items: center;
 }
-.site-header ul.social-icons li {
-}
 .site-header ul.social-icons li a {
   color: #444444;
   display: flex;
@@ -627,7 +625,6 @@ hr {
 }
 
 .service-item {
-  position: relative;
   color: white;
   text-align: center;
   margin-bottom: 30px;
