@@ -948,7 +948,8 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0;
 }
 .time-table p {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  color: #444444;
 }
 .time-table dl,
 .time-table dt,
@@ -967,15 +968,14 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   margin: 20px 10px;
   flex-direction: column;
   gap: 4px;
+  font-size: 1.2em;
 }
 .time-table dt {
   justify-content: space-between;
-  font-size: 1em;
   font-weight: normal;
   width: 10em;
 }
 .time-table dd {
-  font-size: 1em;
   font-weight: bold;
 }
 .time-table dt span {
