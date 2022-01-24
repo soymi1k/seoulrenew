@@ -462,6 +462,18 @@ hr {
   left: 0;
   font-size: 2vw;
 }
+@media (min-width: 768px) {
+  .flexslider .slider-caption {
+    top: 16vw;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  .flexslider .slider-caption {
+    top: 24vw;
+    font-size: 12px;
+  }
+}
 .flexslider .slider-caption h2 {
   color: white;
   text-transform: uppercase;
@@ -767,6 +779,7 @@ hr {
   width: 100%;
 }
 .team-member .member-thumb .team-overlay {
+  font-size: 2.5vw;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -784,36 +797,54 @@ hr {
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
+@media (min-width: 768px) {
+  .team-member .member-thumb .team-overlay {
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .team-member .member-thumb .team-overlay {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-member .member-thumb .team-overlay {
+    font-size: 15px;
+  }
+}
+
 .team-member .member-thumb .team-overlay h3 {
-  font-size: 28px;
+  font-size: 2em;
   font-weight: 700;
   letter-spacing: 1em;
   color: white;
   display: inline-block;
-  padding-bottom: 10px;
   /* border-bottom: 1px solid white; */
-  margin-top: 64px;
+  margin-top: 2em;
   position: relative;
 }
 
 .team-member .member-thumb .team-overlay span {
   text-transform: uppercase;
-  font-weight: 300;
-  margin-top: 10px;
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
   display: block;
 }
 .team-member .member-thumb .team-overlay ul.social {
   display: block;
-  margin-top: 20px;
+  margin-top: 1em;
+}
+.team-member .member-thumb .team-overlay ul li {
+  font-size: 1em;
 }
 .team-member .member-thumb .team-overlay ul.social li {
   display: inline-block;
 }
 .team-member .member-thumb .team-overlay ul.social li a {
-  width: 36px;
-  height: 36px;
+  width: 2em;
+  height: 2em;
   background-color: white;
-  line-height: 40px;
+  line-height: 2.1em;
   color: #118ab2;
   border-radius: 18px;
   -webkit-border-radius: 18px;
@@ -905,21 +936,19 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
    	font-style: normal;
 }
 */
-@media screen and (min-width: 768px) {
-  .team-overlay ul {
-    display: none;
-  }
-}
-@media screen and (min-width: 992px) {
-  .team-overlay ul {
-    display: list-item;
-  }
-}
 
 .kakao_banner {
   background: #f9e000;
   color: #2a303e;
   font-size: 1vw;
+}
+@media (min-width: 768px) {
+  .kakao_banner {
+    display: none;
+  }
+  .site-slider {
+    margin-top: 105px;
+  }
 }
 .kakao-item {
   display: flex;
@@ -968,7 +997,12 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   margin: 20px 10px;
   flex-direction: column;
   gap: 4px;
-  font-size: 1.2em;
+  font-size: 4vw;
+}
+@media (min-width: 576px) {
+  .time-table dl {
+    font-size: 1.4em;
+  }
 }
 .time-table dt {
   justify-content: space-between;
@@ -984,6 +1018,7 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
   color: #118ab2;
 }
 .time-table ul {
+  margin-top: 8px;
   justify-content: center;
 }
 .time-table li {
@@ -996,4 +1031,31 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
 .time-table li i {
   line-height: 1.85;
   padding: 0 10px;
+}
+.kakao-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 2em;
+}
+.kakao-item-bottom section {
+  flex-direction: column;
+}
+.kakao-item-bottom header {
+  font-size: 2em;
+}
+.kakao-item-bottom .fa-comment {
+  font-size: 5em;
+}
+.kakao-banner-bottom {
+  background: #f9e000;
+  color: #2a303e;
+  font-size: 8px;
+  margin: 0 30px;
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .kakao-banner-bottom {
+    visibility: visible;
+  }
 }
