@@ -321,6 +321,14 @@ hr {
   margin: 30px 0 20px 0;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .site-header ul.social-icons {
+    font-size: 2em;
+  }
+  .site-header ul.social-icons li a span {
+    font-size: 0.7em;
+  }
+}
 .site-header ul.social-icons li a {
   color: #444444;
   display: flex;
