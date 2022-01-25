@@ -897,6 +897,9 @@ hr {
   border: 10px solid #efefef;
 }
 
+.contact-info li a {
+  color: #efefef;
+}
 .contact-info {
   margin-top: 40px;
 }
@@ -927,9 +930,14 @@ hr {
 }
 
 #footer {
-  margin-top: 130px;
+  color: #efefef;
+  background-color: #5e5e5e;
+  margin-top: 80px;
+  padding-bottom: 20px;
 }
-
+.modal-open {
+  overflow-y: auto;
+}
 /*
 body, p, div, h1, h2, h3, h4, h5, h6 {
 	font-family:"Noto Sans KR", sans-serif;

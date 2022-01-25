@@ -337,16 +337,6 @@
                         </div> <!-- /.googlemap-wrapper -->
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-7 col-sm-6">
-                        <ul class="contact-info">
-                            <li>Phone: 02-888-0053</li>
-                            <li>Email: <a href="mailto:renewdnt@naver.com">renewdnt@naver.com</a></li>
-                            <li>Address: 서울시 관악구 관악로 184</li>
-                        </ul>
-                        <!-- spacing for mobile viewing --><br><br>
-                    </div> <!-- /.col-md-7 -->
-                </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /#contact -->
             
@@ -354,6 +344,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-xs-12 text-left">
+                        <ul class="contact-info">
+                            <li>서울시 관악구 관악로 184 2층 서울리뉴치과</li>
+                            <li>사업자번호: 461-41-00872 </li>
+                            <li>서울리뉴치과 대표: 박상헌</li>
+                            <li>Email: <a href="mailto:renewdnt@naver.com">renewdnt@naver.com</a></li>
+                            <li>전화: 02-888-0053</li>
+
+                        </ul>
                         <span>Copyright &copy; 2022 Renew Dental Clinic</span>
                   </div> <!-- /.text-center -->
                     <div class="col-md-4 hidden-xs text-right">
@@ -362,7 +360,23 @@
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
         </div> <!-- /#footer -->
-        
+<!-- #Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"  data-backdrop="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">공지사항</h5>
+        </div>
+        <div class="modal-body">
+          <img src="images/noti.jpeg" style="width: 100%;" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- /#Modal -->
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
@@ -385,5 +399,12 @@
             });
         </script>
         <!-- templatemo 406 flex -->
+        <!-- #Modal script-->
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                $('#Modal').modal('show');
+            });
+        </script>
+        <!-- /#Modal script-->
     </body>
 </html>
