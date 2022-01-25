@@ -1049,13 +1049,16 @@ body, p, div, h1, h2, h3, h4, h5, h6 {
 }
 .kakao-banner-bottom {
   background: #f9e000;
+  border-radius: 1vw;
   color: #2a303e;
   font-size: 8px;
   margin: 0 30px;
   visibility: hidden;
+  height: 0px;
 }
 @media (min-width: 768px) {
   .kakao-banner-bottom {
     visibility: visible;
+    height: auto;
   }
 }
